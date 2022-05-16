@@ -14,3 +14,42 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.notion-page-cover {
+  display: none;
+}
+
+.notion-nav-header {
+  display: none;
+}
+/* .notion-page-scroller {
+  display: none;
+} */
+.notion-header {
+  display: none;
+}
+.notion-title {
+  text-align: center;
+  display: none;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+.otion-page-icon-hero .notion-page-icon-span {
+  display: none;
+}
+
+.notion-page-content {
+  padding: 0;
+  /* text-align: center; */
+  font-size: larger;
+  font-weight: 600;
+}
+
+.notion-page-cover {
+  display: none;
+}
+
+.notion-page-cover-wrapper{
+  display: none;
+}

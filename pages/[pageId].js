@@ -4,8 +4,8 @@ import { NotionPage } from "../components/NotionPage";
 import { rootNotionPageId } from "../lib/config";
 import notion from "../lib/notion";
 
-export const getStaticProps = async () => {
-  const pageId = rootNotionPageId;
+export const getStaticProps = async (context) => {
+  const pageId = context.params.pageId || rootNotionPageId;
   const recordMap = await notion.getPage(pageId);
 
   return {
@@ -15,6 +15,13 @@ export const getStaticProps = async () => {
     revalidate: 10
   };
 };
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: true
+  };
+}
 
 export default function Page({ recordMap }) {
   return <NotionPage recordMap={recordMap} rootPageId={rootNotionPageId} />;
