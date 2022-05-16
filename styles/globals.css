@@ -50,6 +50,25 @@ a {
   display: none;
 }
 
-.notion-page-cover-wrapper{
+.notion-page-cover-wrapper {
   display: none;
+}
+
+.notion-page-icon {
+  display: none;
+}
+
+.notion-page-icon-hero .notion-page-icon-image {
+  display: none;
+}
+
+.notion-page-no-cover.notion-page-has-image-icon {
+  padding-top: 24px;
+}
+
+.notion-page-icon-hero.notion-page-icon-image {
+  display: none;
+}
+.notion-page-no-cover.notion-page-has-image-icon {
+  padding-top: 20px !important;
 }
